@@ -1,0 +1,24 @@
+# Molar volume of ethanol (1) + water (2) mixtures at 25 degC and 1 bar. Pure-liquid volumes from CoolProp; the excess volume is a
+# representative Redlich-Kister fit (minimum about -1.1 cm3/mol near x1 = 0.4). Columns: x_ethanol, molar volume (cm3/mol).
+x_ethanol,V_cm3_mol
+0.000,18.0686
+0.050,19.8381
+0.100,21.6486
+0.150,23.4971
+0.200,25.3808
+0.250,27.2970
+0.300,29.2433
+0.350,31.2172
+0.400,33.2167
+0.450,35.2398
+0.500,37.2848
+0.550,39.3501
+0.600,41.4342
+0.650,43.5359
+0.700,45.6542
+0.750,47.7882
+0.800,49.9373
+0.850,52.1008
+0.900,54.2785
+0.950,56.4703
+1.000,58.6760

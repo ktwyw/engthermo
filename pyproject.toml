@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "engthermo"
+version = "0.1.0"
+description = "Chemical engineering thermodynamics in Python: validated steam tables, equations of state, phase equilibria and reaction equilibria, with an 18-notebook course."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Yanwei Wang", email = "wangyanwei@gmail.com" }]
+keywords = ["thermodynamics", "chemical engineering", "steam tables", "IAPWS-IF97", "equation of state", "phase equilibrium",
+            "activity coefficient", "UNIFAC", "reaction equilibrium", "power cycles", "education"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Chemistry",
+]
+dependencies = ["numpy>=1.24", "scipy>=1.11"]
+
+[project.optional-dependencies]
+notebooks = ["matplotlib>=3.7", "pandas>=1.5", "jupyterlab>=4"]
+dev = ["pytest>=7", "ruff>=0.5", "matplotlib>=3.7", "pandas>=1.5", "nbformat>=5", "nbclient>=0.9", "ipykernel>=6",
+       "CoolProp>=6.6", "iapws>=1.5", "thermo>=0.4"]
+
+[project.urls]
+Homepage = "https://github.com/ktwyw/engthermo"
+Issues = "https://github.com/ktwyw/engthermo/issues"
+Validation = "https://github.com/ktwyw/engthermo/blob/main/docs/VALIDATION.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+engthermo = ["data/*.csv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "src/engthermo"]
+addopts = "--doctest-modules"
+filterwarnings = ["error::FutureWarning", "error::DeprecationWarning:engthermo.*"]
+
+[tool.ruff]
+line-length = 120
+extend-exclude = ["notebooks/*.ipynb", "solutions/*.ipynb"]
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E731", "E402", "B905"]
+
+[tool.ruff.lint.per-file-ignores]
+"docs/*" = ["E501"]
+"tools/*" = ["E501", "E702"]
+"notebooks/*.py" = ["E501", "E702"]
+"solutions/*.py" = ["E501", "E702"]
+"tests/*" = ["E501"]
+"src/engthermo/_if97_coefficients.py" = ["E501"]
+"src/engthermo/_component_data.py" = ["E501"]
+"src/engthermo/datasets.py" = ["E501"]  # data descriptions
+"src/engthermo/_unifac_data.py" = ["E501"]
+"src/engthermo/unifac.py" = ["E501"]  # group assignment table

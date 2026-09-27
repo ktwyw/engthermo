@@ -1,0 +1,22 @@
+# Ethanol (1) + water (2) vapour-liquid equilibrium at 101.325 kPa: pseudo-experimental data generated from a Wilson model
+# anchored to the experimental azeotrope (x1 = 0.894, 78.15 degC) and limiting activity coefficient (Lambda12 = 0.3131,
+# Lambda21 = 0.7262), with 0.15 K and 0.004 noise. Columns: x1 (liquid), y1 (vapour), T (degC).
+x_ethanol,y_ethanol,T_C
+0.000,0.0000,99.90
+0.020,0.1482,95.85
+0.050,0.2874,92.30
+0.080,0.3642,89.52
+0.120,0.4392,87.12
+0.170,0.4963,85.27
+0.230,0.5475,83.55
+0.300,0.5862,82.29
+0.380,0.6217,81.14
+0.470,0.6642,80.27
+0.560,0.6940,79.50
+0.650,0.7429,78.96
+0.730,0.7809,78.69
+0.800,0.8310,78.24
+0.860,0.8714,78.05
+0.910,0.9078,78.05
+0.950,0.9503,78.42
+1.000,1.0000,78.65

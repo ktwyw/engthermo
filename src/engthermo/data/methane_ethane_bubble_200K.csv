@@ -1,0 +1,12 @@
+# Bubble points of methane (1) + ethane (2) at 200 K from CoolProp's multi-fluid reference mixture model (HEOS backend,
+# GERG-2008 type). Columns: x1 (liquid), bubble pressure (Pa), y1 (vapour).
+x_methane,p_bubble_Pa,y_methane
+0.000,217233,0.00000
+0.100,717919,0.68976
+0.200,1.20588e+06,0.81275
+0.300,1.68524e+06,0.86467
+0.400,2.16086e+06,0.89383
+0.500,2.63884e+06,0.91302
+0.600,3.12763e+06,0.92715
+0.700,3.64046e+06,0.93863
+0.800,4.2015e+06,0.94902

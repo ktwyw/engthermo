@@ -1,0 +1,19 @@
+# Methanol-water VLE at atmospheric pressure, teaching laboratory, spring term. Ebulliometer with recirculation;
+# compositions by refractive index. Generated for the course from UNIFAC bubble points (0.2 K, 0.005 noise) with
+# deliberate faults: mixed pressure units, one temperature in K, a duplicate, a decimal comma, a missing y,
+# and one inconsistent point (run-07: vapour sample mis-taken).
+run,x_methanol,y_methanol,T,p,p_unit
+run-01,0.020,0.138,96.7,101.3,kPa
+run-02,0.050,0.270,92.4,101.3,kPa
+run-03,0.100,,87.3,101.3,kPa
+run-04,0.150,0.510,84.2,760,mmHg
+run-05,0.200,0.579,81.8,101.3,kPa
+run-06,0.300,0.673,350.8,101.3,kPa
+run-07,0.400,0.622,75.0,101.3,kPa
+run-08,0.500,0.784,73.3,760,mmHg
+run-09,0.600,0.833,71.5,101.3,kPa
+run-09,0.600,0.833,71.5,101.3,kPa
+run-10,0.700,0.877,69.5,101.3,kPa
+run-11,0.800,0,924,67.9,101.3,kPa
+run-12,0.900,0.957,65.9,101.3,kPa
+run-13,0.950,0.979,65.4,101.3,kPa

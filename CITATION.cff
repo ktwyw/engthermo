@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use engthermo in your work, please cite it as below."
+title: "engthermo: chemical engineering thermodynamics in Python"
+type: software
+authors:
+  - family-names: Wang
+    given-names: Yanwei
+    email: wangyanwei@gmail.com
+    orcid: "https://orcid.org/0000-0002-8488-9833"
+    website: "https://github.com/ktwyw"
+version: 0.1.0
+date-released: "2026-09-27"
+license: MIT
+repository-code: "https://github.com/ktwyw/engthermo"
+keywords:
+  - thermodynamics
+  - chemical engineering
+  - phase equilibrium
+  - equations of state
+  - engineering education
+abstract: >-
+  Readable, validated Python for chemical engineering thermodynamics - IAPWS-IF97 steam tables, power and
+  refrigeration cycles, equations of state, phase and reaction equilibria - checked against reference
+  formulations, independent implementations and textbook examples, with an 18-notebook course and worked
+  solutions.
