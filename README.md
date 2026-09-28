@@ -11,6 +11,8 @@
 [![license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--8488--9833-a6ce39)](https://orcid.org/0000-0002-8488-9833)
 
+<img src="docs/images/co2_isotherms.gif" width="640" alt="Peng-Robinson isotherms of CO2 sweeping through the critical point, with the two-phase dome and saturation tie lines from the equal-fugacity condition">
+
 </div>
 
 `engthermo` covers an undergraduate course in chemical engineering thermodynamics, from the first law and
@@ -28,8 +30,6 @@ vle.bubble_T(["ethanol", "water"], [0.5, 0.5], p=101325.0)  # Raoult's law (add 
 reaction.equilibrium_constant({"N2": -1, "H2": -3, "NH3": 2}, T=723.15)
 ```
 
-<p align="center"><img src="docs/figures/gallery.png" alt="A T-s diagram of steam with a reheat Rankine cycle, Peng-Robinson isotherms of CO2, the ethanol-water T-x-y diagram from UNIFAC, the ammonia synthesis equilibrium, an Ellingham diagram and the Cu-Ni lens diagram computed with engthermo" width="900"></p>
-<p align="center"><sub>Six results computed by the library (regenerate with <code>python tools/make_readme_figures.py</code>): steam T-s diagram with a reheat Rankine cycle, Peng-Robinson isotherms through the critical point, the ethanol-water azeotrope predicted by UNIFAC, ammonia synthesis equilibrium, the Ellingham diagram, the Cu-Ni lens diagram.</sub></p>
 
 ## Why engthermo?
 
@@ -90,6 +90,16 @@ solution in [`solutions/`](solutions). They open in Google Colab and install `en
 | 15 | [High-temperature thermochemistry](notebooks/15_high_temperature_thermochemistry.ipynb) | fuels and CO2, flame temperatures, Ellingham diagram, green steel |
 | 16 | [Electrochemical thermodynamics](notebooks/16_electrochemical_thermodynamics.ipynb) | fuel cells, electrolysers, batteries |
 | 17 | [From messy laboratory data to a model](notebooks/17_from_messy_vle_data_to_a_model.ipynb) | data repair, consistency, fitting with uncertainties, reporting |
+
+## Gallery
+
+Every image is computed by the library; `python tools/make_images.py` regenerates them.
+
+| | |
+|:-:|:-:|
+| <img src="docs/images/ts_rankine.png" width="400"><br>Steam T-s diagram (IAPWS-IF97) with a reheat Rankine cycle | <img src="docs/images/pr_isotherms.png" width="400"><br>Peng-Robinson isotherms of CO2 through the critical point |
+| <img src="docs/images/ethanol_water_txy.png" width="400"><br>Ethanol-water: UNIFAC finds the azeotrope Raoult's law cannot | <img src="docs/images/ammonia_equilibrium.png" width="400"><br>Ammonia synthesis: the Haber-Bosch compromise |
+| <img src="docs/images/ellingham.png" width="400"><br>Ellingham diagram: which oxides carbon and hydrogen can reduce | <img src="docs/images/cu_ni_lens.png" width="400"><br>Cu-Ni lens diagram from two melting points and two enthalpies |
 
 ## Install
 
