@@ -28,6 +28,9 @@ vle.bubble_T(["ethanol", "water"], [0.5, 0.5], p=101325.0)  # Raoult's law (add 
 reaction.equilibrium_constant({"N2": -1, "H2": -3, "NH3": 2}, T=723.15)
 ```
 
+<p align="center"><img src="docs/figures/gallery.png" alt="A T-s diagram of steam with a reheat Rankine cycle, Peng-Robinson isotherms of CO2, the ethanol-water T-x-y diagram from UNIFAC, the ammonia synthesis equilibrium, an Ellingham diagram and the Cu-Ni lens diagram computed with engthermo" width="900"></p>
+<p align="center"><sub>Six results computed by the library (regenerate with <code>python tools/make_readme_figures.py</code>): steam T-s diagram with a reheat Rankine cycle, Peng-Robinson isotherms through the critical point, the ethanol-water azeotrope predicted by UNIFAC, ammonia synthesis equilibrium, the Ellingham diagram, the Cu-Ni lens diagram.</sub></p>
+
 ## Why engthermo?
 
 - **Data you can trust.** The IAPWS-IF97 coefficient tables and the UNIFAC group tables are transcribed
